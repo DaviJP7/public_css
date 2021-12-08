@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    /* font-size: 15pt; */
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+
+a:hover{
+    color: #0000EE;
+}
+
+
+.header{
+    margin: 1.5em 7em 1.5em 7em;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 10pt;
+}
+
+main{
+    background: url('./img/main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    min-width:1200px;
+}
+
+main .introduction{
+    font-size: 23pt;
+    max-width: 700px;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 100px 40px 40px 80px;
+    text-shadow: 1px 1px 2px black;
+    color: #fff;
+}
+
+main .small-introduction{
+    max-width: 420px;
+    margin: 0px 0px 0px 80px;
+    color: #fff;
+    font-weight: 600;
+    opacity: .9;
+    text-shadow: 2px 2px 3px #000;
+}
+
+
+/* buttons */
+.btn-primary{
+    border: 1px solid #0000EE;
+    border-radius: 4px;
+    padding: .5em;
+}
+
+.btn-outiline-primary{
+    background-color: #0000EE;
+    color: #fff;
+    padding: .5em;
+    border: 1px solid #0000EE;
+    border-radius: 4px;
+}
+
+.login-action .btn-primary {
+    color: #0000EE;
+}
+.login-action .btn-outiline-primary:hover{
+    color: #fff;
+}
