@@ -7,12 +7,24 @@
 
 body{
     font-family: 'Nunito', sans-serif;
-    /* font-size: 15pt; */
+    padding: 0 90px;
+    /* background: rgba(0, 0, 0, 0.1); */
+    background-color: rgb(82, 170, 243);
+}
+main {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 ul,li,a{
     list-style: none;
     text-decoration: none;
     color: #000;
+}
+
+
+li a{
+    padding: 5px;
 }
 
 
@@ -22,6 +34,7 @@ a:hover{
 
 
 .header{
+    user-select: none;
     margin: 1.5em 7em 1.5em 7em;
 }
 
@@ -35,29 +48,33 @@ a:hover{
 .navbar ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 2em;
     font-size: 10pt;
 }
 
-main{
-    background: url('./img/main.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    min-width:1200px;
+.navbar .login-action{
+    gap: .9em;
 }
 
-main .introduction{
+.main{
+    user-select: none;
+    background-image: url('./img/main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    margin-bottom: 50px;
+    min-width:400px;
+}
+
+.main .introduction{
     font-size: 23pt;
     max-width: 700px;
-    /* display: flex;
-    flex-direction: column; */
-    padding: 100px 40px 40px 80px;
+    padding: 100px 40px 10px 80px;
     text-shadow: 1px 1px 2px black;
     color: #fff;
 }
 
-main .small-introduction{
+.main .small-introduction{
     max-width: 420px;
     margin: 0px 0px 0px 80px;
     color: #fff;
@@ -67,6 +84,125 @@ main .small-introduction{
 }
 
 
+.main .search{
+    position: relative;
+    text-align: center;
+    background: #fff;
+    max-width: 500px;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 20px 0 0 80px;
+}
+
+/* .search  */
+
+.search input{
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 14pt;
+    width: 375px;
+    margin-right: 70px;
+}
+
+.search ion-icon{
+    position: absolute;
+    left: 0;
+    font-size: 20pt;
+    z-index: 1;
+    margin: 7px 0 0 10px;
+    opacity: .7;
+}
+
+.search button{
+    position: absolute;
+    background: #0000EE;
+    font-family: nunito, sans-serif;
+    color: #fff;
+    z-index: 1;
+    margin: 4px 10px 0 0;
+    cursor: pointer;
+    right: 0;
+}
+
+.main p{
+    margin: 15px 0 0 80px;
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.main > p > ion-icon{
+    color: gold;
+}
+
+/* FOOTER */ 
+
+.icons ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.icons li{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.icons .red ion-icon{
+    background: red;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 15pt;
+}
+
+.icons .purple ion-icon{
+    background: rgb(120, 5, 155);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 15pt;
+}
+
+.icons .yellow ion-icon{
+    background: rgb(233, 233, 14);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 15pt;
+}
+
+.icons .orange ion-icon{
+    background: orange;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 15pt;
+}
+
+.icons .green ion-icon{
+    background: green;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 15pt;
+}
+
+.ft-text {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.ft-text h4{
+    font-size: 26pt;  
+    margin: 40px 0 10px 0;
+}
+.ft-text small{
+    font-weight: 500;
+    color: rgb(53, 51, 51);
+}
 /* buttons */
 .btn-primary{
     border: 1px solid #0000EE;
@@ -80,6 +216,10 @@ main .small-introduction{
     padding: .5em;
     border: 1px solid #0000EE;
     border-radius: 4px;
+}
+
+.login-action a{
+    padding: 7px 15px;
 }
 
 .login-action .btn-primary {
