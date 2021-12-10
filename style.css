@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+:root{
+    --defcol: #0000EE;
+    --seccol: #000;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +24,7 @@ main {
 ul,li,a{
     list-style: none;
     text-decoration: none;
-    color: #000;
+    color: var(--seccol);
 }
 
 
@@ -29,7 +34,7 @@ li a{
 
 
 a:hover{
-    color: #0000EE;
+    color: var(--defcol);
 }
 
 
@@ -61,7 +66,7 @@ a:hover{
     background-image: url('./img/main.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    height: 100vh;
     margin-bottom: 50px;
     min-width:400px;
 }
@@ -70,7 +75,7 @@ a:hover{
     font-size: 23pt;
     max-width: 700px;
     padding: 100px 40px 10px 80px;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px var(--seccol);
     color: #fff;
 }
 
@@ -80,7 +85,7 @@ a:hover{
     color: #fff;
     font-weight: 600;
     opacity: .9;
-    text-shadow: 2px 2px 3px #000;
+    text-shadow: 2px 2px 3px var(--seccol);
 }
 
 
@@ -117,7 +122,7 @@ a:hover{
 
 .search button{
     position: absolute;
-    background: #0000EE;
+    background: var(--defcol);
     font-family: nunito, sans-serif;
     color: #fff;
     z-index: 1;
@@ -129,7 +134,7 @@ a:hover{
 .main p{
     margin: 15px 0 0 80px;
     color: #fff;
-    text-shadow: 2px 2px 3px #000;
+    text-shadow: 2px 2px 3px var(--seccol);
 }
 
 .main > p > ion-icon{
@@ -205,16 +210,16 @@ a:hover{
 }
 /* buttons */
 .btn-primary{
-    border: 1px solid #0000EE;
+    border: 1px solid var(--defcol);
     border-radius: 4px;
     padding: .5em;
 }
 
 .btn-outiline-primary{
-    background-color: #0000EE;
+    background-color: var(--defcol);
     color: #fff;
     padding: .5em;
-    border: 1px solid #0000EE;
+    border: 1px solid var(--defcol);
     border-radius: 4px;
 }
 
@@ -223,8 +228,11 @@ a:hover{
 }
 
 .login-action .btn-primary {
-    color: #0000EE;
+    color: var(--defcol);
 }
 .login-action .btn-outiline-primary:hover{
     color: #fff;
+}
+footer{
+    height: 100vh;
 }
