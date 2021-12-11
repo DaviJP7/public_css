@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --primary: #4B5CEF;
+    --opacity: #444343;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    margin: 1em;
+    font-family: 'Poppins', sans-serif;
+    background: #d3d3d3;
+}
+
+main{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px 150px 20px;
+}
+
+main header img{
+    width: 90px;
+}
+main header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em 4em 1em 4em;
+}
+
+.navbar ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a
+{
+    font-size: 10pt;
+    opacity: .6;
+    font-weight: 800;
+    text-decoration: none;
+    color: #000;
+    padding: 6px;
+    position: relative;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .2s linear;
+}
+
+.navbar ul li a:hover
+{
+    border-bottom: 2px solid var(--primary);
+}
+
+.navbar ul li a.active
+{
+    opacity: 1;
+    border-bottom: 2px solid var(--primary);
+}
+
+main .content
+{
+    padding: 10px 0 0 70px;
+}
+
+.tag span
+{
+    font-weight: bold;
+}
+
+.content img{
+    width: 720px;
+    position: absolute;
+    right: 5em;
+    top: 2em;
+
+}
+
+.content .main-text
+{
+    padding-top: 40px;
+    font-size: 40pt;
+    font-weight: 900;
+    width: 360px;
+}
+
+.content .main-text span{
+    font-weight: normal;
+}
+
+.content small
+{
+    padding-top: 10px;
+    display: block;
+    width: 350px;
+}
+
+small
+{
+    opacity: .6;
+    color: var(--opacity);
+    font-weight: 800;
+}
+
+.footer
+{
+    padding: 0;
+    padding-top: 3em;
+}
+
+.footer ul{
+    padding-top: 4em;
+    font-size: 13pt;
+}
+
+.footer .logos ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    gap: 2em;
+    max-width: 400px;
+}
+
+.logos ul li {
+    list-style: none;
+}
+
+.logos ul li a
+{
+    text-decoration: none;
+    color: var(--opacity);
+    opacity: .7;
+    font-weight: 800;
+    transition: opacity .2s;
+}
+
+.logos ul li a:hover
+{
+    opacity: 1;
+}
+
+/* BTN */
+.btn-primary
+{
+    font-size: 11pt;
+    text-decoration: none;
+    background: var(--primary);
+    padding: .8em;
+    color: #fff;
+    border-radius: 40px;
+}
+.tag
+{
+    text-decoration: none;
+    color: #000;
+    font-size: 11pt;
+    border: 1px solid #000;
+    border-radius: 40px;
+    padding: 4px 9px 4px 9px;
+}

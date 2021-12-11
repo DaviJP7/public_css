@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="./neon-logo.svg" alt="">
+            <nav class="navbar">
+                <ul>
+                    <li><a class="lnk active" href="#">Home</a></li>
+                    <li><a class="lnk" href="#">Features</a></li>
+                    <li><a class="lnk" href="#">Pricing</a></li>
+                    <li><a class="lnk" href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <a class="btn-primary" href="#">Get Started</a>
+        </header>
+        
+        <div class="content">
+
+            <img src="./brawl-stars-logo.svg" alt="">
+
+            <a class="tag" href="">
+                &#x1F44B <span>#1 DESIGN ADVICER AGENCY</span>
+            </a>
+
+            <h1 class="main-text">Devevlop and grow <span>&#x1F63B</span> your concept</h1>
+
+            <small>
+                Outcome-centered products that reduce churn, optimize pricing, and grow your subscription .
+            </small>
+
+            <div class="footer">
+                <a class="btn-primary" href="#">Learn More</a>
+                <div class="logos">
+                    <ul>
+                        <li><a href="#">&COPY; logoIpsum</a></li>
+                        <li><a href="#">&trade; logoIpsum</a></li>
+                        <li><a href="#">&scy; logoIpsum</a></li>
+                        <li><a href="#">&alpha; logoIpsum</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const lnk = document.querySelectorAll('.lnk');
+        function activeLink() {
+            lnk.forEach((item) =>
+                item.classList.remove('active'))
+                this.classList.add('active')
+            }
+            lnk.forEach((item)=>item.addEventListener('click',activeLink));
+
+    </script>
+</body>
+
+</html>
